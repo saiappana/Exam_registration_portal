@@ -82,6 +82,7 @@
        }) */
    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="validate.js"></script>
 
 </head>
 <body>
@@ -161,7 +162,7 @@
       <span id="centerm"></span>
       <br>
       <br>
-      <input type="submit" onsubmit="home.html" class="registerbtn" value="APPLY" ng-disabled=" myform.aname.$invalid ||  myform.fname.$invalid || myform.cnumber.$invalid || myform.email.$invalid || myform.aadhar.$invalid " > 
+      <input type="submit" onclick="validateform()" class="registerbtn" value="APPLY" ng-disabled=" myform.aname.$invalid ||  myform.fname.$invalid || myform.cnumber.$invalid || myform.email.$invalid || myform.aadhar.$invalid " > 
       <div>
       <p style="text-align: center;">
         Go back to <a href="home" style="text-decoration: none;">Home</a>

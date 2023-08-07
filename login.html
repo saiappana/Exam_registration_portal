@@ -52,7 +52,7 @@
                             <div class="card m-xl-5"
                                 style="border-radius: 15px;box-shadow: 3px 3px 10px rgba(0,0,0,0.15);">
                                 <div class="card-body p-lg-4">
-                                    <form ng-app="myApp" ng-controller="validateCtrl" name="myform" action="home.html" novalidate>
+                                    <form ng-app="myApp" ng-controller="validateCtrl" name="myform" novalidate>
                                         <div>
                                             <p class="h4" style="font-weight: 600;">Login</p>
                                             <p>Hey, Enter your details to get Login to your account</p>
@@ -74,7 +74,7 @@
                                             </div>
                                         <br>
                                         <div class="mx-auto d-grid gap-2 col-6">
-                                            <input type="submit" value="LOG IN" class="btn btn-danger" style="font-weight: bold;" ng-disabled=" myform.user.$invalid || myform.password.$invalid">
+                                            <input type="submit" onsubmit="home.html" value="LOG IN" class="btn btn-danger" style="font-weight: bold;" ng-disabled=" myform.user.$invalid || myform.password.$invalid">
                                         </div>
                                         <div style="text-align: center;">
                                             <a href="#" style="color:red;text-decoration: none;">Forgot password?</a>

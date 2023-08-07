@@ -120,13 +120,14 @@ span.price {
            })
        })
 </script>
+  <script src="validate.js"></script>
 </head>
 <body>
 <h2>Registration Payment</h2>
 <div class="row">
   <div class="col-75">
     <div class="container">
-      <form name="myform" method="post" action="success.html" >
+      <form name="myform">
         <div class="row">
           <div class="col-50">
             <h3>Billing Address</h3>
@@ -185,7 +186,7 @@ span.price {
           </div>
           
         </div>
-        <input type="submit" value="Continue to checkout" class="btn">
+        <input type="submit" onclick="validateform()" value="Continue to checkout" class="btn">
       </form>
       <div style="text-align: center;">
        <p> GO BACK TO <a  href="home.html"> HOME </a> PAGE  </p>

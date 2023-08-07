@@ -66,7 +66,7 @@
                             <div class="card my-xl-5 mx-xl-4"
                                 style="border-radius: 15px;box-shadow: 3px 3px 10px rgba(0,0,0,0.15);">
                                 <div class="card-body p-lg-4">
-                                    <form  name="myform" ng-app="myApp" ng-controller="validateCtrl" method="post" action="login.html" novalidate>
+                                    <form  name="myform" ng-app="myApp" ng-controller="validateCtrl" novalidate>
                                         <div>
                                             <p class="h4" style="font-weight: 600;">Register</p>
                                             <p>Hey, Enter your details to get register to account</p>
@@ -127,7 +127,7 @@
                                         <hr>
 
                                         <div class="mx-auto d-grid gap-2 col-6">
-                                            <input type="submit" class="btn btn-danger" id="button" value="Register" style="font-weight: bold;" ng-disabled=" myform.uname.$invalid || myform.email.$invalid || myform.phone.$invalid || myform.crepassword.$invalid || myform.conpassword.invalid">
+                                            <input type="submit" onsubmit="login.html" class="btn btn-danger" id="button" value="Register" style="font-weight: bold;" ng-disabled=" myform.uname.$invalid || myform.email.$invalid || myform.phone.$invalid || myform.crepassword.$invalid || myform.conpassword.invalid">
                                         </div>
                                         <div style="text-align: center;">
                                             <p>Already have an account <a href="login.html" style="text-decoration: none;"><b>Login here</b></a></p>

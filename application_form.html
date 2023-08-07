@@ -85,7 +85,7 @@
 
 </head>
 <body>
-  <form  name="myform" ng-app="myApp" ng-controller="nameCtrl" action="/application" method="post" >
+  <form  name="myform" ng-app="myApp" ng-controller="nameCtrl" >
     <div class="container">
       <h1>APPLICATION FORM</h1>
       <p>Please fill Application form.</p>
@@ -161,7 +161,7 @@
       <span id="centerm"></span>
       <br>
       <br>
-      <input type="submit" class="registerbtn" value="APPLY" ng-disabled=" myform.aname.$invalid ||  myform.fname.$invalid || myform.cnumber.$invalid || myform.email.$invalid || myform.aadhar.$invalid " > 
+      <input type="submit" onsubmit="home.html"class="registerbtn" value="APPLY" ng-disabled=" myform.aname.$invalid ||  myform.fname.$invalid || myform.cnumber.$invalid || myform.email.$invalid || myform.aadhar.$invalid " > 
       <div>
       <p style="text-align: center;">
         Go back to <a href="home" style="text-decoration: none;">Home</a>
